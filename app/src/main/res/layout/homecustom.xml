@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:id="@+id/itemcontentview">
+
+    <ImageView
+        android:id="@+id/coffe_home_img_iv"
+        android:layout_width="200dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:src="@drawable/cofe_espress0" />
+    <TextView
+        android:id="@+id/name_home_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:text="Espresso"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:singleLine="true"
+        android:textStyle="bold" />
+
+</LinearLayout>

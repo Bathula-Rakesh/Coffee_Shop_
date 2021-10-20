@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/coffee"
+        android:padding="50dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Get the best coffee in town!"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textStyle="italic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <android.widget.Button
+            android:background="@drawable/button_shape"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            app:cornerRadius="18dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Login"
+            android:textColor="#FFF"
+            android:onClick="login"/>
+
+        <android.widget.Button
+            android:background="@drawable/button_shape_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            app:cornerRadius="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:text="Sign Up"
+            android:textColor="#ba8d60"
+            android:onClick="signup"/>
+
+    </LinearLayout>
+
+    <android.widget.Button
+        android:background="@drawable/button_shape_3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Continue with Facebook"
+        android:textColor="#3B5999"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:drawableLeft="@drawable/facebook1"
+        android:paddingLeft="50dip"
+        android:paddingRight="70dip" />
+
+</LinearLayout>
